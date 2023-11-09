@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav,
+footer,
+h1,
+.card-title,
+.card-text,
+.bannerbsastext,
+.bannerbsastitle {
+  font-family: 'Tilt Neon', sans-serif;
 }
 
 header {
@@ -13,10 +24,18 @@ header {
     z-index: 5;
  }
 
- header,
- .bannerbsas {
+ header {
   background-color: rgba(51, 58, 64, 0.7);
  }
+
+ .bannerbsas {
+  background-color: #333A40;
+ }
+
+ .linkcac {
+  text-decoration: none;
+  color: transparent;
+}
 
  .logocodoacodo img {
     height: 75px;
@@ -35,7 +54,7 @@ header {
  }
 
  nav a {
-    color: #333A40;
+    color: rgba(51, 58, 64, 0.7);
     padding: 10px;
     text-decoration: none;
     text-shadow: 2px 2px 2px #FEC901;
@@ -161,6 +180,11 @@ button {
   margin-top: 15px;
 }
 
+.Anotate u {
+  text-decoration: none;
+  border-bottom: 1px dotted #000; /* Puedes ajustar el color cambiando el código hexadecimal (#000) */
+}
+
 .card{
 width:60%;
 margin-left: 20%;
@@ -272,3 +296,23 @@ form input[type="submit"]:hover {
   transform: translateY(-5px);
 }
 
+footer {
+  margin-top: 20px;
+  background-color: #1D4157;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+
+footer a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer a:not(:last-child) {
+  margin-right: 10px;
+}
